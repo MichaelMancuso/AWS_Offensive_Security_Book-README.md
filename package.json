@@ -1,0 +1,15 @@
+{
+  "name": "aws-offensive-security-book-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rebuild AWS_Offensive_Security.html natively as a .docx using docx-js",
+  "scripts": {
+    "figures": "node rasterize-figures.js",
+    "build": "node build-docx.js",
+    "all": "npm run figures && npm run build"
+  },
+  "dependencies": {
+    "docx": "9.1.0",
+    "sharp": "^0.34.5"
+  }
+}
